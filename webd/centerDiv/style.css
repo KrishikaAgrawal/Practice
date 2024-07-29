@@ -1,0 +1,54 @@
+/* with flex */
+
+/* .parent {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  height: 300px;
+  width: 300px;
+  background-color: yellowgreen;
+}
+ */
+
+/* with grid */
+
+/* .parent {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.child {
+  height: 300px;
+  width: 300px;
+  background-color: yellowgreen;
+} */
+
+/* without grid or flex */
+
+.parent {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.child {
+  height: 300px;
+  width: 300px;
+  background-color: yellowgreen;
+}
