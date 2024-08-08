@@ -10,7 +10,7 @@ function Header() {
       expand="lg"
       className=" bg-gray-200 px-3 py-2 sm:mb-1 sm:ml-1 sm:mr-1 rounded-t-lg sm:rounded-none"
     >
-      <Container>
+      <Container className=" flex ">
         <Navbar.Brand>
           {/* Logo container */}
           <Link to="/Home/Home" className="text-2xl font-extrabold">
@@ -20,7 +20,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Navigation buttons */}
-          <Nav className="ml-auto gap-3 flex ">
+          <Nav className="ml-80 flex justify-between gap-44 ">
             <NavLink
               to="/"
               className={({ isActive }) =>
