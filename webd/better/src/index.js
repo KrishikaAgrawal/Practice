@@ -18,6 +18,7 @@ import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
+import Start from "./Components/Start/Start";
 import MortgageCalculator from "./Components/MortgageCalculator/MortgageCalculator";
 // import Error from "./Components/Error/Error";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "About",
         element: <About />,
+      },
+      {
+        path: "Start",
+        element: <Start />,
       },
       {
         path: "MortgageCalculator",

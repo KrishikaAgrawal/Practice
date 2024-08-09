@@ -42,6 +42,16 @@ function Header() {
               About
             </NavLink>
             <NavLink
+              to="/Start"
+              className={({ isActive }) =>
+                isActive
+                  ? "nav-link font-bold underline underline-offset-1"
+                  : "nav-link hover:underline hover:underline-offset-1"
+              }
+            >
+              Start
+            </NavLink>
+            <NavLink
               to="/MortgageCalculator"
               className={({ isActive }) =>
                 isActive
