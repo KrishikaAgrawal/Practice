@@ -9,7 +9,7 @@ function Header() {
     <Navbar
       expand="lg"
       // className=" bg-[#017848] px-3 py-2 sm:mb-1 sm:ml-1 sm:mr-1 rounded-t-lg sm:rounded-none"
-      className=" bg-[#017848] h-20 text-white"
+      className=" bg-[#017848] h-20 text-white flex items-center pl-5 fixed z-10  w-full"
     >
       <Container className=" flex ">
         <Navbar.Brand>
@@ -21,13 +21,13 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Navigation buttons */}
-          <Nav className="ml-80 flex justify-between gap-44 ">
+          <Nav className="flex justify-start pt-2">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link font-bold underline underline-offset-1"
-                  : "nav-link hover:underline hover:underline-offset-1"
+                  ? "nav-link font-bold border-b-2 rounded-sm mx-8"
+                  : "nav-link hover:border-b-2 hover:rounded-sm mx-8"
               }
             >
               Home
@@ -36,8 +36,8 @@ function Header() {
               to="/About"
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link font-bold underline underline-offset-1"
-                  : "nav-link hover:underline hover:underline-offset-1"
+                  ? "nav-link font-bold border-b-2 rounded-sm mx-8"
+                  : "nav-link hover:border-b-2 hover:rounded-sm mx-8"
               }
             >
               About
@@ -46,8 +46,8 @@ function Header() {
               to="/Start"
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link font-bold underline underline-offset-1"
-                  : "nav-link hover:underline hover:underline-offset-1"
+                  ? "nav-link font-bold border-b-2 rounded-sm mx-8"
+                  : "nav-link hover:border-b-2 hover:rounded-sm mx-8"
               }
             >
               Start
@@ -56,8 +56,8 @@ function Header() {
               to="/MortgageCalculator"
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link font-bold underline underline-offset-1"
-                  : "nav-link hover:underline hover:underline-offset-1"
+                  ? "nav-link font-bold border-b-2 rounded-sm mx-8"
+                  : "nav-link hover:border-b-2 hover:rounded-sm mx-8"
               }
             >
               Mortgage Calculator
