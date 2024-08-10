@@ -8,7 +8,8 @@ function Header() {
   return (
     <Navbar
       expand="lg"
-      className=" bg-gray-200 px-3 py-2 sm:mb-1 sm:ml-1 sm:mr-1 rounded-t-lg sm:rounded-none"
+      // className=" bg-[#017848] px-3 py-2 sm:mb-1 sm:ml-1 sm:mr-1 rounded-t-lg sm:rounded-none"
+      className=" bg-[#017848] h-20 text-white"
     >
       <Container className=" flex ">
         <Navbar.Brand>
