@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-<-- Mission --/>
+{/* Mission */}
       <div className="flex flex-col items-center py-36">
         <h1 className="text-[#017848] text-3xl py-10 font-semibold text-center">
           Our mission
@@ -14,6 +14,7 @@ const About = () => {
         </p>
       </div>
 
+{/* The status quo is broken */}
       <div className="flex justify-between px-20 py-20">
         <div className="w-1/2 px-16">
           <h1 className="text-3xl py-2 font-semibold text-[#292B29]">
