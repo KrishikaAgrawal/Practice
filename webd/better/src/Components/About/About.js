@@ -56,6 +56,90 @@ const About = () => {
           and enjoyable.
         </p>
       </div>
+      <div>
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-300"></div>
+
+          {/* Timeline Items */}
+          <div className="space-y-8">
+            {/* 2014 */}
+            <div className=" flex  justify-center w-full">
+              <div className=" text-center w-1/12 p-2 bg-green-500 text-white rounded-full">
+                2014
+              </div>
+            </div>
+            <div className=" flex  justify-center w-full">
+              <div className=" text-left w-2/ p-8 mr-96 bg-[#DFE0DC] text-slate-600 rounded-lg">
+                After Vishal Garg’s first attempt to purchase his own dream
+                home, he quickly realized that the homebuying process is
+                unnecessarily broken. This inspired him to found a
+                technology-first company led by engineers and data experts with
+                the mission of digitizing and automating home finance to make it
+                cheaper, easier, and faster for all.
+              </div>
+            </div>
+            <div></div>
+
+            <div className="flex items-center w-full">
+              <div className="w-1/2 text-right pr-8">
+                <div className="p-4 bg-gray-100 rounded-lg shadow-lg">
+                  Content for 2014
+                </div>
+              </div>
+              <div className="w-1/12 text-center">
+                <div className="p-2 bg-green-500 text-white rounded-full">
+                  2014
+                </div>
+              </div>
+            </div>
+
+            {/* 2015 */}
+            <div className="flex items-center w-full">
+              <div className="w-1/12 text-center">
+                <div className="p-2 bg-green-500 text-white rounded-full">
+                  2015
+                </div>
+              </div>
+              <div className="w-1/2 text-left pl-8">
+                <div className="p-4 bg-gray-100 rounded-lg shadow-lg">
+                  Content for 2015
+                </div>
+              </div>
+            </div>
+
+            {/* 2016 */}
+            <div className="flex items-center w-full">
+              <div className="w-1/2 text-right pr-8">
+                <div className="p-4 bg-gray-100 rounded-lg shadow-lg">
+                  Content for 2016
+                </div>
+              </div>
+              <div className="w-1/12 text-center">
+                <div className="p-2 bg-green-500 text-white rounded-full">
+                  2016
+                </div>
+              </div>
+            </div>
+
+            {/* 2017 */}
+            <div className="flex items-center w-full">
+              <div className="w-1/12 text-center">
+                <div className="p-2 bg-green-500 text-white rounded-full">
+                  2017
+                </div>
+              </div>
+              <div className="w-1/2 text-left pl-8">
+                <div className="p-4 bg-gray-100 rounded-lg shadow-lg">
+                  Content for 2017
+                </div>
+              </div>
+            </div>
+
+            {/* Repeat for other years up to 2023 */}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
