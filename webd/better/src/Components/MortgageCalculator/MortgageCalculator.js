@@ -2,6 +2,13 @@ import React from "react";
 const MortgageCalculator = () => {
   return (
     <>
+      <div className="pt-20">
+        <div>
+          <h1>Mortgage calculator</h1>
+        </div>
+        <div></div>
+      </div>
+
       <div className="pt-20 px-14">
         {/* How does a mortgage calculator help me? */}
         <h1 className="text-[#292B29] font-semibold text-3xl py-10">
