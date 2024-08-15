@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       {/* footer 1 */}
-      {/*   <div className="p-20">
+      <div className="p-20">
         <h1 className="text-4xl font-bold text-[#236d58]">Better</h1>
         <div className="flex justify-between ">
           <div className="w-96">
@@ -154,9 +154,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* footer 2 */}
-      {/*  <div className="p-20">
+      <div className="p-20">
         <div className="text-slate-900">
           <FontAwesomeIcon
             icon={faSquareFacebook}
@@ -302,7 +302,7 @@ const Footer = () => {
           Trademark Office. Better Cover is a registered trademark with the U.S.
           Patent and Trademark Office and is owned by Better Cover, LLC.
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

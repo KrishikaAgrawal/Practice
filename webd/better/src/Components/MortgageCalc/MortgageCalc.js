@@ -1,8 +1,9 @@
-import React from "react";
-const MortgageCalculator = () => {
+/* import React from "react";
+
+const MortgageCalc = () => {
   return (
     <>
-      <div className="bg-slate-900">
+      <div className="">
         <h1>How does a mortgage calculator help me?</h1>
         <p>
           When deciding how much house you can afford, one of the most important
@@ -17,4 +18,13 @@ const MortgageCalculator = () => {
   );
 };
 
-export default MortgageCalculator;
+export default MortgageCalc;
+ */
+
+import React from "react";
+
+const MortgageCalc = () => {
+  return <div>MortgageCalc</div>;
+};
+
+export default MortgageCalc;
