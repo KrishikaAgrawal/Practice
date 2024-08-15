@@ -19,7 +19,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
 import Start from "./Components/Start/Start";
-import MortgageCalc from "./Components/MortgageCalc/MortgageCalc";
 import MortgageCalculator from "./Components/MortgageCalculator/MortgageCalculator";
 // import Error from "./Components/Error/Error";
 
@@ -41,10 +40,7 @@ const router = createBrowserRouter([
         path: "Start",
         element: <Start />,
       },
-      {
-        path: "MortgageCalc",
-        element: <MortgageCalc />,
-      },
+
       {
         path: "MortgageCalculator",
         element: <MortgageCalculator />,

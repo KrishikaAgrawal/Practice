@@ -54,17 +54,6 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="/MortgageCalc"
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link font-bold border-b-2 rounded-sm mx-8"
-                  : "nav-link hover:border-b-2 hover:rounded-sm mx-8"
-              }
-            >
-              MortgageCalc
-            </NavLink>
-
-            <NavLink
               to="/MortgageCalculator"
               className={({ isActive }) =>
                 isActive
