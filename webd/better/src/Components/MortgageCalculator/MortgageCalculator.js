@@ -1,10 +1,129 @@
-import React from "react";
+import React, { useState } from "react";
 const MortgageCalculator = () => {
+  let p = 20000;
+  const [homePrice, setHomePrice] = useState(300);
+  const [downPayment, setDownPayment] = useState(0);
+  const [rate, setRate] = useState(0);
+  const [length, setLength] = useState(0);
+  const [monthlyPayment, setMonthlyPayment] = useState(0);
+
+  const handleInputChange = (e) => {
+    const value = Math.min(Math.max(e.target.value, 0), 3000000); // Restrict value between 0 and 3000000
+    setHomePrice(value);
+  };
+
+  const handleSliderChange = (e) => {
+    setHomePrice(e.target.value);
+  };
+
   return (
     <>
       <div className="pt-20">
-        <div>
-          <h1>Mortgage calculator</h1>
+        <div className="py-20 px-14 text-[#292B29] bg-[#F0F7F1]">
+          <h1 className="font-semibold text-5xl">Mortgage calculator</h1>
+
+          <p className="text-[#565D5A] py-8 w-3/5  ">
+            Use our mortgage calculator built directly into it! Get accurate
+            estimates for your monthly mortgage payments if you will be required
+            to have private mortgage insurance (PMI). Also learn why
+          </p>
+          <div className="flex justify-between items-end">
+            <div>
+              <h2 className="font-semibold py-3 text-[#292B29]">Home price</h2>
+              <input
+                type="number"
+                onChange={handleInputChange}
+                className="w-[300px] h-[80px] hover:border-[#017848] hover:border-4 bg-white border border-[#b0b4b3] rounded-lg focus:outline-none"
+              />
+            </div>
+            <div>
+              <h2 className="font-semibold py-3 text-[#292B29]">
+                Monthly payment
+              </h2>
+              <h1 className="font-semibold text-5xl h-[80px] flex items-center">
+                $959/mo
+              </h1>
+            </div>
+            <div className="rounded-lg bg-[#017848] h-[60px] w-[250px] flex items-center justify-center text-white font-semibold">
+              Get pre-approved
+            </div>
+          </div>
+          {/* <input
+            type="range"
+            min="0"
+            max="3000000"
+            value={homePrice}
+            onChange={handleSliderChange}
+            className="w-full mt-4"
+          /> */}
+          <div>
+            <div className="flex justify-between mt-14">
+              <div className="flex justify-between">
+                {/* ZIP code */}
+                <div className="relative w-64 mr-4">
+                  <input
+                    type="number"
+                    id="ZIPCode"
+                    className=" px-4 w-full h-[60px] hover:border-[#017848] hover:border-4 focus:outline-none peer bg-white border border-[#b0b4b3] rounded-lg"
+                  />
+                  <label
+                    className="absolute top-4 left-3 peer-focus:scale-75 peer-focus:-translate-y-4 text-gray-500 duration-300 font-semibold "
+                    htmlFor="ZIPCode"
+                  >
+                    ZIP Code
+                  </label>
+                </div>
+                {/* Down Payment */}
+                <div className="relative w-64">
+                  <input
+                    type="number"
+                    id="DownPayment"
+                    className="inline-block align-top px-4 w-3/4 h-[60px] hover:border-[#017848] hover:border-4 focus:outline-none peer bg-white border border-[#b0b4b3] rounded-l-lg"
+                  />
+                  <div className="inline-block align-top w-1/4 h-[60px] hover:border-[#017848] hover:border-4 bg-white border-r border-t border-b border-[#b0b4b3] rounded-r-lg"></div>
+                  <label
+                    className="absolute top-4 left-3 peer-focus:scale-75 peer-focus:-translate-y-4 peer-focus:left-1 text-gray-500 duration-300 font-semibold"
+                    htmlFor="DownPayment"
+                  >
+                    Down Payment
+                  </label>
+                </div>
+              </div>
+              <div className="flex justify-between">
+                {/* Interest Rate */}
+                <div className="relative w-64  mr-4 ">
+                  <input
+                    type="number"
+                    id="InterestRate"
+                    className=" px-4 w-full h-[60px] hover:border-[#017848] hover:border-4 focus:outline-none peer bg-white border border-[#b0b4b3] rounded-lg"
+                  />
+                  <label
+                    className="absolute top-4 left-3 peer-focus:scale-75 peer-focus:-translate-y-4 peer-focus:left-2 text-gray-500 duration-300 font-semibold "
+                    htmlFor="InterestRate"
+                  >
+                    Interest Rate
+                  </label>
+                </div>
+                {/* Length of loan */}
+                <div className="relative w-64">
+                  <select
+                    id="Length"
+                    className="px-4 w-full h-[60px] hover:border-[#017848] hover:border-4 focus:outline-none  bg-white border border-[#b0b4b3] rounded-lg appearance-none"
+                  >
+                    <option value="30 years">30 years</option>
+                    <option value="20 years">20 years</option>
+                    <option value="15 years">15 years</option>
+                  </select>
+                  <label
+                    className="absolute top-4 left-1 scale-75 -translate-y-4 text-gray-500  font-semibold"
+                    htmlFor="Length"
+                  >
+                    Length of loan
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
